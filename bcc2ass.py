@@ -66,7 +66,7 @@ if __name__ == '__main__':
         print('Unsupport type:', args.type)
         exit(1)
     try:
-        with open(args.bcc_file) as f: bcc=json.load(f)
+        with open(args.bcc_file，'r',encoding='UTF-8') as f: bcc=json.load(f)#a new change here
     except:
         print("input file error")
         exit(2)
